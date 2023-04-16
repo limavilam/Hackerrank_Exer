@@ -5,11 +5,14 @@ deberemos mostrar a l o H."""
 sentence = input ('Ingrese la palabra que quiere ser deletreada:')
 len_sentence = len(sentence)
 
-#Se usa para invertir cadenas
+#OTRA MANERA DE HACERLO
+"""Se usa para invertir cadenas
 inverted_sentence = sentence [::-1]
 
 for letra in inverted_sentence:
-    print (letra, end = " ")
-print ( )
+   print (letra, end = " ")
+print ( )"""
 
+for i in range(len_sentence, 0, -1):
+    print(sentence[i-1])
 
